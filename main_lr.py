@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 
 data_path = "Dataset/philosophy_data.csv"
 edit_data_path = "Dataset/philosophy_data_edit.csv"
-model_path = "Models/LR_model.pth"
+model_path = "Models/lr_model.pth"
 
 processor = TextProcessor()
 

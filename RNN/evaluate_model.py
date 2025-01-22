@@ -1,6 +1,5 @@
 import torch
-import torch.nn as nn
-from sklearn.metrics import precision_score, recall_score, f1_score, classification_report, accuracy_score
+from sklearn.metrics import classification_report, accuracy_score
 import pandas as pd
 
 def evaluate_model(model, val_loader, label_encoder, device):

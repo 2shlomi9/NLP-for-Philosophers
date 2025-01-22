@@ -1,6 +1,5 @@
 
 import torch
-import matplotlib.pyplot as plt
 from evaluate_model import evaluate_model
 
 def train(model, train_loader, val_loader, optimizer, scheduler, device, epochs=4):
