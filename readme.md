@@ -1,35 +1,6 @@
 # Philosophy Text Classification Project, using Deep Learning and NLP methods
 
 ## Overview
-This project focuses on classifying sentences from philosophical texts into one of four major philosophical schools: Aristotle, German Idealism, Plato, and Continental Philosophy. The dataset contains over 160,000 sentences extracted from philosophical texts.
-
-We implemented various machine learning and deep learning models, ranging from Logistic Regression to BERT, to analyze and classify these texts effectively.
-
----
-
-## Project Goals
-1. Develop and evaluate machine learning and deep learning models for philosophical text classification.
-2. Explore text processing methods (NLP) to enhance feature representation.
-3. Compare the effectiveness of different model architectures.
-4. Gain insights into the conceptual and ideological distinctions reflected in the dataset.
-
----
-
-## Dataset
-- The dataset includes over 160,000 sentences divided into four philosophical schools:
-  - Aristotle: 48,778 sentences
-  - German Idealism: 42,135 sentences
-  - Plato: 38,365 sentences
-  - Continental: 33,778 sentences
-- Extensive preprocessing was performed to ensure high-quality data for modeling.
-
----
-
-## Models Implemented
-
-# Philosophy Text Classification Project
-
-## Overview
 This project focuses on classifying sentences from philosophical texts into one of four major philosophical schools: Aristotle, German Idealism, Plato, and Continental Philosophy. The dataset contains over 150,000 sentences extracted from 51 philosophical texts.
 
 We implemented various machine learning and deep learning models, ranging from Logistic Regression to BERT, to analyze and classify these texts effectively.
