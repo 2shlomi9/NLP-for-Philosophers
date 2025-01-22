@@ -158,7 +158,7 @@ python main_rnn.py
 
 #### Bert Graph:
 ![Bert Accuarcy Graph](images/bert_acc_graph.jpg)
-![Bert Loss Graph](images/bert_graph.jpg)
+![Bert Loss Graph](images/Bert_graph.jpg)
 
 #### Instructions:
 To run the model:
