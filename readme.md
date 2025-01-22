@@ -27,6 +27,82 @@ We implemented various machine learning and deep learning models, ranging from L
 
 ## Models Implemented
 
+# Philosophy Text Classification Project
+
+## Overview
+This project focuses on classifying sentences from philosophical texts into one of four major philosophical schools: Aristotle, German Idealism, Plato, and Continental Philosophy. The dataset contains over 150,000 sentences extracted from 51 philosophical texts.
+
+We implemented various machine learning and deep learning models, ranging from Logistic Regression to BERT, to analyze and classify these texts effectively.
+
+---
+
+## Project Goals
+1. Develop and evaluate machine learning and deep learning models for philosophical text classification.
+2. Explore text processing methods to enhance feature representation.
+3. Compare the effectiveness of different model architectures.
+4. Gain insights into the conceptual and ideological distinctions reflected in the dataset.
+
+---
+
+## Dataset
+The dataset includes 150,000 sentences divided into four philosophical schools:
+- **Aristotle**: 48,778 sentences
+- **German Idealism**: 42,135 sentences
+- **Plato**: 38,365 sentences
+- **Continental**: 33,778 sentences
+
+Extensive preprocessing was performed to ensure high-quality data for modeling.
+
+---
+
+## Models Implemented
+
+### 1. Logistic Regression (LR)
+
+#### Overview:
+- **Location**: `LR/` directory
+- Features:
+  - Conversion methods: Bag-Of-Words, TF-IDF, Word2Vec.
+  - Regularization options: None, Lasso, Ridge.
+  - Optimization methods: SGD, ADAM, LBFGS.
+  - Training options: With/Without Cross-Validation.
+
+#### Performance:
+- **Bag-Of-Words Accuracy**: 65% (using SGD Optimization + Ridge Regularization)
+- **TF-IDF Accuracy**: 25% (using SGD Optimization + Ridge Regularization)
+- **Word2Vec Accuracy (best accuracy)**: 81% (using LBFGS Optimization + Ridge Regularization)
+
+#### Bag-Of-Words Results:
+![LR Bag-Of-Words Results](images/bag_resaul.jpg)
+
+#### Bag-Of-Words Graph:
+![LR Bag-Of-Words Graph](images/bag_graph.py.jpg)
+
+#### TF-IDF Results:
+![LR TF-IDF Results](images/tf_idf_resualt.jpg)
+
+#### TF-IDF Graph:
+![LR TF-IDF Graph](images/tf_idf_graph.jpg)
+
+#### Word2Vec Results:
+![LR Word2Vec Results](images/word2vec_resault.jpg)
+
+#### Word2Vec Graph:
+![LR Word2Vec Graph](images/word2vec_graph.jpg)
+
+#### Instructions:
+To run the model:
+```bash
+python main_lr.py
+```
+Options in `main_lr.py`:
+- `choosen_convert_data`: Choose a conversion method (1 - Bag-Of-Words, 2 - TF-IDF, 3 - Word2Vec).
+- `choosen_training_model`: Choose training method (0 - without cross-validation, 1 - with cross-validation).
+- `choosen_regularization`: Choose regularization (0 - without, 1 - Lasso, 2 - Ridge).
+- `choosen_optimization`: Choose optimization (1 - SGD, 2 - ADAM, 3 - LBFGS).
+
+---
+
 ### Logistic Regression (LR)
 - Implemented in the `LR` directory.
 - Features:
@@ -34,10 +110,7 @@ We implemented various machine learning and deep learning models, ranging from L
   - Regularization options: Lasso, Ridge.
   - Optimization methods: SGD, ADAM, LBFGS.
 - Results:
-  - Accuracy: **84%**
-- Graphs:
-  ![Add NN Training Graph Here]
-  ![Add NN Validation Graph Here]
+  - Accuracy according to the best method (Word2Vec + Ridge Regularization): **81%**
 - To run:
   ```bash
   python main_lr.py
@@ -119,7 +192,7 @@ project/
 
 ---
 
-## Text Processing
+## Text Processing for logistic regression
 Text preprocessing steps included:
 1. **Removing Irrelevant Words:** Stopwords like "is," "she," etc., were removed.
 2. **Converting to Lowercase:** Ensures uniformity.
